@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   const query = req.body.cityName;
-  const apiKey = "c964d18966884a52b38118c37ccd3569";
+  const apiKey = "API_KEY";
   const url = `https://api.weatherbit.io/v2.0/current?city=${query}&key=${apiKey}&include=minutely`;
 
   https.get(url, (response) => {
